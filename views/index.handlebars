@@ -1,31 +1,28 @@
 <div class="container">
 
   <div class="jumbotron">
-    <h1>Order Your Burger </h1>
-    <p>Burger Orders for Pickup.</p>
+    <h1>Select and Eat Your Burger </h1>
+    {{!-- <p>Burger Orders for Pickup.</p> --}}
     <br>
-    <h2>Select a Burger</h2>
+    
     
         <form class="create-form">
           <div class="input-group">
             <div class="form-group">
-              <label for="newburger"></label>
+              {{!-- <label for="newburger"> <h2>Select a Burger</h2></label> --}}
               <input type="text" class="form-control" id="newburger" name="burger" placeholder="Order Your burger">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-warning btn-lg " id="addburger">Get It</button>
+              </div>
             </div>
           </div>
-            {{!-- <input type="text" id="newburger" name="burger"> --}}
-            </button>
-            <button type="submit" class="btn btn-success btn-lg" id="addburger">Get It</button>
-         
+          
         </form>
-      
-    
   </div>
-  <div class="row">
-    <div class="col-sm-6">
+  <div class="row justify-content-around">
+    <div class="col-sm-5">
       <div class="panel panel-default">
-        <div class="panel-heading" id="leftside"><strong>Order Your Burger</strong>
-          <p>Send order to cashier when ready for pick up</p>
+        <div class="panel-heading" id="leftside"><strong>Eat Your Burger</strong>
         </div>
         <div class="panel-body">
 
@@ -35,7 +32,7 @@
 
             <span><strong> {{this.id}} - {{this.burger_name}}</strong></span>
             <button type="button" class="eatburger btn btn-warning" id="eatbutton" data-id="{{this.id}}"
-              data-newDevoured="{{devour}}"><span class="fa fa-usd"></span></button>
+              data-newDevoured="{{devour}}"><i class="fas fa-utensils"></i></span></button>
             <hr>
             {{/unless}}
             {{/each}}
@@ -44,10 +41,9 @@
         </div>
       </div>
     </div>
-    <div class="col-sm-6">
+    <div class="col-sm-5">
       <div class="panel panel-default">
-        <div class="panel-heading" id="rightside"><strong>Burger is Ready for Pick Up</strong>
-          <p>Remove order from pick up when delivered</p>
+        <div class="panel-heading" id="rightside"><strong>Burger is Eaten!</strong>
         </div>
         <div class="panel-body">
           <ul>

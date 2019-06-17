@@ -1,8 +1,8 @@
 .jumbotron {
-  background-image: url("../img/burger123.png");
+  background-image: url("../img/burger.png");
   background-repeat: no-repeat;
   background-position: right;
-  background-color: #ffffff;
+  background-color: #ebeaaf;
   color: #0e0d0d;
   margin-top: 3%;
 }
@@ -11,13 +11,13 @@
   width: 100%;
 }
 #leftside {
-  background-color: #5c5c5c;
+  background-color: #663939;
   color: white;
   text-align: center;
   font-size: 1.3em;
 }
 #rightside {
-  background-color: #e49322;
+  background-color: #3f3cda;
   color: white;
   text-align: center;
   font-size: 1.3em;
@@ -26,6 +26,16 @@
 input[type=text] {
   width: 100%;
   padding: 12px 20px;
-  margin: 8px 0;
+  margin: 5px 0;
   box-sizing: border-box;
+}
+
+#addburger {
+  position: relative;
+  top:5px;
+  left: 10px;
+}
+
+.container {
+  width: 70%;
 }
